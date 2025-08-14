@@ -11,6 +11,11 @@ public class User {
     private String password;
     private String email;
     private String role;
+    private String address;
+    private String phoneNumber;
+
+    public User() {
+    }
 
     public User(Long id, String password) {
         this.id = id;
@@ -24,8 +29,6 @@ public class User {
         this.address = address;
         this.phoneNumber = phoneNumber;
     }
-
-    private String address;
 
     public Long getId() {
         return id;
@@ -74,8 +77,5 @@ public class User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-
-    private String phoneNumber;
-
 
 }
